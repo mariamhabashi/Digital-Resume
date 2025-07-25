@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body {
 
@@ -172,19 +173,15 @@ body {
     margin-bottom: 0; 
 }
 
-
-.skproj-container{
+.content-box {
+    width: 85%;
+    margin: 40px auto; 
+    padding: 30px;
     background-color: #ead4f7c4;
-    width: 80%;
-    margin: auto;
-    margin-top: 20px;
-    padding: 20px;
     border-radius: 10px;
 }
+
 .skills {
-    max-width: 900px;
-    margin: 80px auto;
-    padding: 0 20px;
     text-align: center;
 }
 
@@ -200,27 +197,25 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
-    list-style: none;
+    list-style: none; /* This removes the bullets */
     padding: 0;
     margin: 0;
 }
 
 .skills-list li {
-    background-color: rgba(0, 0, 0, 0.2);
-    color: #e0c8fb;
+    background-color: rgba(61, 25, 92, 0.4);
+    color: #f0e6ff;
     padding: 12px 25px;
     border-radius: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.1rem;
     font-weight: 500;
-    transition: transform 0.3s ease, background-color 0.3s ease;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
 }
 
 .skills-list li:hover {
     transform: translateY(-5px);
-    background-color: rgba(0, 0, 0, 0.35);
-    color: #fff;
 }
 .projects {
     margin-top: 40px;
